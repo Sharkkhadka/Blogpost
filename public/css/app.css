@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+.error_msg {
+    color: red;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.error_red_border {
+    border: 1px solid red;
+}
+
+i {
+    padding: 0 0.3rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+html,
+body {
+    /* height: 100%;
+    width: 100%; */
+    background-color: #ddd;
+}
+
+.navigation_bar {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.navigation_bar .main_nav,
+.navigation_bar .user_nav {
+    display: flex;
+}
+
+.navigation_bar .main_nav li a,
+.navigation_bar .user_nav li a {
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    transition: 0.1s ease;
+}
+
+.navigation_bar .main_nav li a:hover {
+    background-color: rgb(80, 124, 255);
+    color: white;
+    border-radius: 0.2rem;
+}
+
+.navigation_bar .user_nav li a:hover {
+    background-color: rgb(80, 124, 255);
+    color: white;
+    border-radius: 0.2rem;
+}
+
+.home_container {
+    background-color: #fff;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: 60%;
+}
+
+.home_container .home_content {
+    background-color: #eee;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+.home_container .home_content .title-bold {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.home_container .home_content .title-bold:hover {
+    color: rgb(80, 124, 255);
+}
+
+.home_container .home_content .title {
+    margin-bottom: 0.7rem;
+}
+
+.home_container .home_content .time {
+    margin-bottom: 0.7rem;
+}
+
+.create_post_container {
+    background-color: #fff;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: 60%;
+}
+
+.display_content {
+    background-color: #fff;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: 60%;
+}
+
+.display_content .title_display {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    padding: 1rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.7rem;
+}
+
+form div label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type='text'],
+input[type='email'],
+input[type="password"] {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 0.3rem;
+}
+
+input[type='text']::placeholder {
+    font-size: 1rem;
+}
+
+textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 0.3rem;
+    resize: none;
+}
+
+.submit_btn {
+    background-color: rgb(80, 124, 255);
+    border: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.submit_btn:hover {
+    background-color: royalblue;
+}
+
+.post_controls {
+    margin: 1rem 0;
+    display: flex;
+}
+
+.post_controls .edit_post a {
+    padding: 0.5rem 1rem;
+    background-color: rgb(80, 124, 255);
+    margin-right: 0.5rem;
+    color: white;
+}
+
+.post_controls .edit_post a:hover {
+    background-color: rgb(117, 152, 255);
+}
+
+.post_controls .delete_post a {
+    padding: 0.5rem 1rem;
+    background-color: tomato;
+    color: white;
+}
+
+.post_controls .delete_post a:hover {
+    background-color: rgb(255, 140, 119);
+}
+
+/* register.blade.php */
+.register_container,
+.login_container {
+    background-color: #fff;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: 30%;
+}
